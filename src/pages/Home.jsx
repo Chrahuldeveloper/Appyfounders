@@ -17,7 +17,7 @@ export default function Home() {
       <Projects />
       <Why />
       <Plans />
-      <AboutUs />
+      {/* <AboutUs /> */}
       <FAQ />
       <Navbar />
       <Footer />
