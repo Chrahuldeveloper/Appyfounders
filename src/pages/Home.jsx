@@ -15,7 +15,7 @@ export default function Home() {
       <Projects />
       <Why />
       <Plans />
-      <Navbar />
+      <Navbar page="home"/>
       <Footer />
     </div>
   );
