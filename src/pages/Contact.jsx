@@ -13,25 +13,31 @@ export default function Contact() {
   const [isloading, setisloading] = useState(false);
 
   const saveData = async () => {
-    try {
-      setisloading(true);
-      await addDoc(collection(db, "contacts"), {
-        name: data.Name,
-        email: data.Email,
-        message: data.Message,
-        timestamp: new Date(),
-      });
-      setisloading(false);
-      setdata({ Name: "", Email: "", Message: "" });
-    } catch (error) {
-      console.log(error);
+    if (
+      Object.values(data).every((i) => {
+        return i !== "";
+      })
+    ) {
+      try {
+        setisloading(true);
+        await addDoc(collection(db, "contacts"), {
+          name: data.Name,
+          email: data.Email,
+          message: data.Message,
+          timestamp: new Date(),
+        });
+        setisloading(false);
+        setdata({ Name: "", Email: "", Message: "" });
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
   return (
     <div className="bg-[#222222] w-screen  overflow-x-clip px-2.5">
       {isloading ? <Loader /> : null}
-      <HeroSection tittle={"CONTACT US"} message={"we will contact you "} />
+      <HeroSection tittle={"CONTACT US"} message={"WE WILL CONTACT YOU "} />
       <div className="border-[1px] border-stone-700 shadow-xl max-w-7xl px-10 py-8 mx-auto mb-20 text-white rounded-lg  md:max-w-5xl lg:max-w-3xl">
         <div className="space-y-2 text-center">
           <h1 className="text-2xl font-bold md:text-5xl">Contact Us</h1>
