@@ -2,8 +2,6 @@ import React from "react";
 import { HeroSection, Navbar } from "../components/index";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
-import AboutUs from "../components/AboutUs";
-import FAQ from "../components/FAQ";
 import Why from "../components/Why";
 import Plans from "../components/Plans";
 
@@ -17,8 +15,6 @@ export default function Home() {
       <Projects />
       <Why />
       <Plans />
-      {/* <AboutUs /> */}
-      <FAQ />
       <Navbar />
       <Footer />
     </div>

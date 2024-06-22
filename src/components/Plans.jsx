@@ -5,33 +5,33 @@ import Package from "../data/Package";
 function Plans() {
   return (
     <div>
-      <div className="justify-between gap-10 mx-auto pt-28 max-w-7xl  md:flex">
+      <div className="justify-between gap-10 mx-auto pt-28 max-w-7xl md:flex">
         <div className="px-6 text-white ">
           <h1 className="text-2xl font-bold md:text-5xl md:max-w-lg">
             Choose Your Plan
           </h1>
         </div>
       </div>
-      <div className="flex flex-col  gap-5 mx-auto py-14 lg:grid lg:grid-cols-3 w-full px-6">
+      <div className="flex flex-col w-full gap-5 px-6 mx-auto py-14 lg:grid lg:grid-cols-3">
         {Package.map((item, i) => {
           return (
             <React.Fragment key={i}>
               <div
                 className={` ${
                   i % 2 !== 0
-                    ? "bg-[#5ED0E7] text-black"
+                    ? "bg-[#aaeec4] text-black"
                     : "bg-[#272727] text-white"
                 } space-y-4 max-w-md rounded-xl shadow-lg  p-8`}
               >
                 <h1 className="text-xl font-bold md:text-2xl ubuntu-bold ">
                   {item.tittle}
                 </h1>
-                <p className=" md:text-lg poppins-medium h-24">{item.Para}</p>
+                <p className="h-24 md:text-lg poppins-medium">{item.Para}</p>
                 <button
                   className={` w-full py-3 rounded-full font-semibold ${
                     i % 2 !== 0
                       ? "bg-black text-white"
-                      : "bg-[#5ED0E7]  text-black"
+                      : "bg-[#aaeec4]  text-black"
                   }`}
                 >
                   Get Started
@@ -52,7 +52,7 @@ function Plans() {
                           {i % 2 !== 0 ? (
                             <FaCircleCheck color="black" />
                           ) : (
-                            <FaCircleCheck color="#5ED0E7" />
+                            <FaCircleCheck color="#aaeec4" />
                           )}
                           <h1>{_}</h1>
                         </li>
