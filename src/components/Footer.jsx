@@ -3,11 +3,11 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
-      <footer className="py-20 px-2 lg:px-6 text-white ubuntu-bold">
-        <div className="flex flex-col items-center md:flex-row md:justify-between space-y-6 md:space-y-0">
+      <footer className="px-2 py-20 text-white lg:px-6 ubuntu-bold">
+        <div className="flex flex-col items-center space-y-6 md:flex-row md:justify-between md:space-y-0">
           {/* Back to top button */}
           <div
-            className="order-1 md:order-2 cursor-pointer"
+            className="order-1 cursor-pointer md:order-2"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
@@ -16,18 +16,18 @@ export default function Footer() {
           </div>
 
           {/* Social media links */}
-          <div className="order-2 md:order-1 flex space-x-4">
-            <a href="https://x.com/Jayprakash300" className="cursor-pointer">
+          <div className="flex order-2 space-x-4 md:order-1">
+            <a href="https://x.com/ChRahul_dev" className="cursor-pointer">
               X
             </a>
             <a
-              href="https://www.instagram.com/_jay_prakash_25/"
+              href="https://www.instagram.com/saasstudiosindia/"
               className="cursor-pointer"
             >
               Instagram
             </a>
             <a
-              href="https://www.linkedin.com/in/jay-prakash-n-reddy-44539722a/"
+              href="https://www.linkedin.com/in/chrahuldev/"
               className="cursor-pointer"
             >
               LinkedIn
