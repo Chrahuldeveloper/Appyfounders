@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { HeroSection, Navbar } from "../components";
+import { HeroSection, Loader, Navbar } from "../components";
 import Footer from "../components/Footer";
-
+import { db } from "../Firebase";
+import { addDoc, collection } from "firebase/firestore";
 export default function Contact() {
   const [data, setdata] = useState({
     Name: "",
@@ -9,12 +10,27 @@ export default function Contact() {
     Message: "",
   });
 
-  const saveData = () => {
-    console.log(data);
+  const [isloading, setisloading] = useState(false);
+
+  const saveData = async () => {
+    try {
+      setisloading(true);
+      await addDoc(collection(db, "contacts"), {
+        name: data.Name,
+        email: data.Email,
+        message: data.Message,
+        timestamp: new Date(),
+      });
+      setisloading(false);
+      setdata({ Name: "", Email: "", Message: "" });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
     <div className="bg-[#222222] w-screen  overflow-x-clip px-2.5">
+      {isloading ? <Loader /> : null}
       <HeroSection tittle={"CONTACT US"} message={"we will contact you "} />
       <div className="border-[1px] border-stone-700 shadow-xl max-w-7xl px-10 py-8 mx-auto mb-20 text-white rounded-lg  md:max-w-5xl lg:max-w-3xl">
         <div className="space-y-2 text-center">
