@@ -33,9 +33,8 @@ export default function Footer() {
               LinkedIn
             </a>
           </div>
-
           {/* Copyright */}
-          <div className="order-3 cursor-pointer">SAASSTUDIOS ©</div>
+          <div className="order-3 cursor-pointer">DevX ©</div>
         </div>
       </footer>
     </div>

@@ -87,7 +87,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Navbar page="contact"/>
+      <Navbar page="contact" />
       <Footer />
     </div>
   );
