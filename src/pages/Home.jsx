@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <div className="bg-[#222222] w-screen overflow-x-clip px-2">
       <HeroSection
-        tittle={" DevX"}
+        tittle={"SaaS Studio"}
         message={"WE BUILD FOR THE FUTURE."}
       />
       <Projects />
       <Why />
       <Plans />
-      <Navbar page="home"/>
+      <Navbar page="home" />
       <Footer />
     </div>
   );
