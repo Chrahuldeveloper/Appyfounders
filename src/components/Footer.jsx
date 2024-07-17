@@ -21,12 +21,6 @@ export default function Footer() {
               X
             </a>
             <a
-              href="https://www.instagram.com/saasstudiosindia/"
-              className="cursor-pointer"
-            >
-              Instagram
-            </a>
-            <a
               href="https://www.linkedin.com/in/chrahuldev/"
               className="cursor-pointer"
             >
