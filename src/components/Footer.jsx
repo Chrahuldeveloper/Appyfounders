@@ -28,7 +28,7 @@ export default function Footer() {
             </a>
           </div>
           {/* Copyright */}
-          <div className="order-3 cursor-pointer">DevX ©</div>
+          <div className="order-3 cursor-pointer">SaaS Studios ©</div>
         </div>
       </footer>
     </div>
