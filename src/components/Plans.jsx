@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCircleCheck } from "react-icons/fa6";
 import Package from "../data/Package";
+import { Link } from "react-router-dom";
 
 function Plans() {
   return (
@@ -27,15 +28,17 @@ function Plans() {
                   {item.tittle}
                 </h1>
                 <p className="h-24 md:text-lg poppins-medium">{item.Para}</p>
-                <button
-                  className={` w-full py-3 rounded-full font-semibold ${
-                    i % 2 !== 0
-                      ? "bg-black text-white"
-                      : "bg-[#aaeec4]  text-black"
-                  }`}
-                >
-                  Get Started
-                </button>
+                <Link to="/contact">
+                  <button
+                    className={` w-full py-3 rounded-full font-semibold ${
+                      i % 2 !== 0
+                        ? "bg-black text-white"
+                        : "bg-[#aaeec4]  text-black"
+                    }`}
+                  >
+                    Get Started
+                  </button>
+                </Link>
                 <hr
                   className={`${i === 0 && "hidden"}  bg-black h-0.5 w-full`}
                 />

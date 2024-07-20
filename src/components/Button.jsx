@@ -6,7 +6,7 @@ export default function Button() {
   return (
     <div>
       <Link
-        to={"https://skedule.netlify.app/user/RNg8vGltd6SMqxVXL39SSTrmqPv2"}
+        to={"/contact"}
       >
         <button
           className={`group flex items-center justify-center space-x-3 bg-[#aaeec4] text-gray-800 w-64 mx-auto py-3.5 mt-5 rounded-full transition-all duration-300 hover:bg-white hover:text-gray-900`}

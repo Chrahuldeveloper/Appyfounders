@@ -39,9 +39,7 @@ export default function HeroSection({ tittle, message }) {
               {char}
             </motion.span>
           ))}
-
           <br />
-
           {msg.split("").map((word, index) => (
             <motion.span
               className="max-w-md mx-auto mb-10 text-lg text-gray-300 md:text-xl lg:text-2xl ubuntu-bold"
