@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "./Button";
 
-export default function HeroSection({ tittle, message }) {
+export default function HeroSection({ tittle, message, btn , scrollToRef}) {
   const sentence = {
     hidden: { opacity: 1 },
     visible: {
@@ -50,7 +50,7 @@ export default function HeroSection({ tittle, message }) {
             </motion.span>
           ))}
         </motion.h3>
-        <Button />
+        <Button btn={btn} scrollToRef={scrollToRef}/>
       </div>
     </div>
   );

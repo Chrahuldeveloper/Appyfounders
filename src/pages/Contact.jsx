@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { HeroSection, Loader, Navbar } from "../components";
 import Footer from "../components/Footer";
 import { db } from "../Firebase";
@@ -34,11 +34,27 @@ export default function Contact() {
     }
   };
 
+  const formref = useRef(null);
+
+  const scrollToRef = () => {
+    formref.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="bg-[#222222] w-screen  overflow-x-clip px-2.5">
       {isloading ? <Loader /> : null}
-      <HeroSection tittle={"CONTACT US"} message={"WE WILL CONTACT YOU "} />
-      <div className="border-[1px] border-stone-700 shadow-xl max-w-7xl px-10 py-8 mx-auto mb-20 text-white rounded-lg  md:max-w-5xl lg:max-w-3xl">
+      <HeroSection
+        tittle={"CONTACT US"}
+        message={"WE WILL CONTACT YOU "}
+        btn={true}
+        scrollToRef={scrollToRef}
+      />
+      <div
+        ref={formref}
+        className="border-[1px] border-stone-700 shadow-xl max-w-7xl px-10 py-8 mx-auto mb-20 text-white rounded-lg  md:max-w-5xl lg:max-w-3xl"
+      >
         <div className="space-y-2 text-center">
           <h1 className="text-2xl font-bold md:text-5xl">Contact Us</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
