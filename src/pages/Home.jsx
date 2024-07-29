@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroSection, Navbar } from "../components/index";
+import { HeroSection, HowWeWork, Navbar } from "../components/index";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Why from "../components/Why";
@@ -14,6 +14,7 @@ export default function Home() {
       />
       <Projects />
       <Why />
+      <HowWeWork />
       <Plans />
       <Navbar page="home" />
       <Footer />

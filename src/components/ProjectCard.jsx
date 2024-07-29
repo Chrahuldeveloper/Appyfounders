@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
         className={`lg:p-10 px-5 py-5  flex flex-col justify-center items-center rounded-3xl bg-[${project.bgcolor}]`}
       >
         <motion.div className="project-card">
-          <div className="image-carousel relative w-[20rem] h-60  lg:h-[30rem] lg:w-[45rem] overflow-hidden">
+          <div className="image-carousel relative w-[80vw] mx-auto h-60 lg:h-[30rem] lg:w-[45rem] overflow-hidden">
             <AnimatePresence initial={false}>
               <motion.img
                 key={currentImage}
