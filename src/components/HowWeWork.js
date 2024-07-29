@@ -1,26 +1,37 @@
 import React from "react";
 import { BsEmojiSmile } from "react-icons/bs";
+import { IoIosCall } from "react-icons/io";
+import { GiArchiveResearch } from "react-icons/gi";
+import { MdOutlineRocketLaunch } from "react-icons/md";
+import { MdSupportAgent } from "react-icons/md";
 
 export default function HowWeWork() {
   const data = [
     {
-      Tittle: "Discovery Call",
-      Para: "We begin with an in-depth discovery call to understand your business, goals, and vision for your website.",
+      Title: "Discovery Call",
+      Description: "Understand your business, goals, and vision.",
+      icon:<IoIosCall  size={28} color="black"/> 
     },
     {
-      Tittle: "User Research",
-      Para: "We begin with an in-depth discovery call to understand your business, goals, and vision for your website.",
-    },
-    {
-      Tittle: "Testing & Launch",
-      Para: "We make sure your website works perfectly on all devices and browsers. Once everything is good to go, we launch your site for the world to see after you give the green light.",
-    },
-    {
-      Tittle: "Ongoing Support",
-      Para: "After the launch, our support continues to help your website evolve with your business. We provide ongoing assistance for content updates and security maintenance.",
-    },
-  ];
+      Title: "User Research",
+      Description: "Tailor the website to your audience.",
+      icon:<GiArchiveResearch size={28} color="black"/>
 
+    },
+    {
+      Title: "Testing & Launch",
+      Description: "Ensure functionality, then launch.",
+      icon:<MdOutlineRocketLaunch size={28} color="black"/>
+
+    },
+    {
+      Title: "Ongoing Support",
+      Description: "Provide continuous support for updates and maintenance.",
+      icon:<MdSupportAgent size={28} color="black"/>
+
+    }
+  ];
+  
   return (
     <div className="relative pt-32">
       <div className="items-start mx-auto md:flex max-w-7xl">
@@ -39,10 +50,10 @@ export default function HowWeWork() {
                 >
                   <div className="space-y-3">
                     <div className="bg-[#aaeec4] text-black  rounded-full w-14 h-14 items-center flex justify-center">
-                      <BsEmojiSmile size={45} />
+                     {item.icon}
                     </div>
-                    <h1 className="text-lg font-bold">{item.Tittle}</h1>
-                    <p className="leading-7">{item.Para}</p>
+                    <h1 className="text-lg font-bold">{item.Title}</h1>
+                    <p className="leading-7">{item.Description}</p>
                   </div>
                 </div>
               </React.Fragment>
