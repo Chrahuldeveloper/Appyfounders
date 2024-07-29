@@ -22,19 +22,19 @@ export default function HowWeWork() {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative pt-32">
       <div className="items-start mx-auto md:flex max-w-7xl">
-        <div className="px-6 text-white lg:sticky top-24 lg:h-[40vh]">
+        <div className="px-6 text-white lg:sticky top-24 lg:h-[37vh]">
           <h1 className="text-2xl font-bold md:text-5xl md:max-w-lg">
             How we Work
           </h1>
         </div>
-        <div className="flex flex-col items-center justify-center gap-6 px-2 md:px-3 md:w-2/3">
+        <div className="flex flex-col items-center justify-center px-2 gap-14 md:px-3 md:w-2/3">
           {data.map((item, i) => {
             return (
               <React.Fragment key={i}>
                 <div
-                  className="bg-[#272727] text-white max-w-xl rounded-xl shadow-lg p-8 sticky h-[40vh]"
+                  className="bg-[#272727] text-white max-w-xl rounded-xl shadow-lg p-8 sticky h-[37vh]"
                   style={{ top: `${i * 5 + 10}%` }}
                 >
                   <div className="space-y-3">
