@@ -22,7 +22,7 @@ export default function HeroSection({ tittle, message, btn , scrollToRef}) {
   const msg = message;
 
   return (
-    <div className="flex items-center justify-center h-screen overflow-hidden">
+    <div className="flex items-center justify-center h-screen overflow-hidden -mt-28">
       <div className="relative z-10 space-y-8 text-center text-white">
         <motion.h3
           className="load-screen--message"

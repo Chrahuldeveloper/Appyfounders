@@ -57,7 +57,7 @@ export default function Contact() {
       >
         <div className="space-y-2 text-center">
           <h1 className="text-2xl font-bold md:text-5xl">Contact Us</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>we will contact you as soon as possible.</p>
         </div>
         <div className="flex flex-col my-5 text-black space-y-9">
           <div className="w-full space-y-3.5">
