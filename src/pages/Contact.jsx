@@ -3,14 +3,18 @@ import { HeroSection, Loader, Navbar } from "../components";
 import Footer from "../components/Footer";
 import { db } from "../Firebase";
 import { addDoc, collection } from "firebase/firestore";
+import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 export default function Contact() {
+  const { sub } = useParams();
+  const [isloading, setisloading] = useState(false);
+
   const [data, setdata] = useState({
     Name: "",
     Email: "",
+    Plan: sub,
     Message: "",
   });
-
-  const [isloading, setisloading] = useState(false);
 
   const saveData = async () => {
     if (
@@ -23,6 +27,7 @@ export default function Contact() {
         await addDoc(collection(db, "contacts"), {
           name: data.Name,
           email: data.Email,
+          Plan: sub,
           message: data.Message,
           timestamp: new Date(),
         });
@@ -64,7 +69,6 @@ export default function Contact() {
             <h1 className="text-white">Name</h1>
             <input
               type="text"
-              placeholder="Name"
               value={data.Name}
               onChange={(e) => {
                 setdata({ ...data, Name: e.target.value });
@@ -76,7 +80,6 @@ export default function Contact() {
             <h1 className="text-white">Email</h1>
             <input
               type="text"
-              placeholder="Email"
               value={data.Email}
               onChange={(e) => {
                 setdata({ ...data, Email: e.target.value });
@@ -85,10 +88,29 @@ export default function Contact() {
             />
           </div>
           <div className="w-full space-y-3.5">
-            <h1 className="text-white">Message</h1>
+            <h1 className="text-white">
+              {sub === "null" ? "Please choose your plan" : "Your Plan"}
+            </h1>
+            {sub === "null" ? (
+              <Link to="/">
+                <input
+                  type="text"
+                  placeholder="fuck"
+                  className="text-white w-full py-3.5 px-2 rounded-lg outline-none bg-zinc-800"
+                />
+              </Link>
+            ) : (
+              <input
+                type="text"
+                value={sub === "null" ? "" : data.Plan}
+                className="text-white w-full py-3.5 px-2 rounded-lg outline-none bg-zinc-800"
+              />
+            )}
+          </div>
+          <div className="w-full space-y-3.5">
+            <h1 className="text-white">About your Project</h1>
             <textarea
               className="w-full py-3.5 px-2 rounded-lg outline-none bg-zinc-800 text-white"
-              placeholder="Message"
               value={data.Message}
               onChange={(e) => {
                 setdata({ ...data, Message: e.target.value });

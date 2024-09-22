@@ -28,7 +28,7 @@ function Plans() {
                   {item.title}
                 </h1>
                 <p className="h-24 md:text-lg poppins-medium">{item.tagline}</p>
-                <Link to="/contact">
+                <Link to={`/contact/${item.title}`}>
                   <button
                     className={` w-full py-3 rounded-full font-semibold ${
                       i % 2 !== 0

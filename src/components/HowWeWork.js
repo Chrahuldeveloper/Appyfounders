@@ -8,22 +8,26 @@ export default function HowWeWork() {
   const data = [
     {
       Title: "Discovery Call",
-      Description: "We begin with an in-depth discovery call to understand your business, goals, and vision for your website.",
+      Description:
+        "We begin with an in-depth discovery call to understand your business, goals, and vision for your website.",
       icon: <IoIosCall size={28} color="black" />,
     },
     {
       Title: "User Research",
-      Description: "We begin with an in-depth discovery call to understand your business, goals, and vision for your website.",
+      Description:
+        "We begin with an in-depth discovery call to understand your business, goals, and vision for your website.",
       icon: <GiArchiveResearch size={28} color="black" />,
     },
     {
       Title: "Testing & Launch",
-      Description: "We make sure your website works perfectly on all devices and browsers. Once everything is good to go, we launch your site for the world to see after you give the green light.",
+      Description:
+        "We make sure your website works perfectly on all devices and browsers. Once everything is good to go, we launch your site for the world to see after you give the green light.",
       icon: <MdOutlineRocketLaunch size={28} color="black" />,
     },
     {
       Title: "Ongoing Support",
-      Description: "After the launch, our support continues to help your website evolve with your business. We provide ongoing assistance for content updates and security maintenance.Why Our Clients Choose Us User-Centric Design",
+      Description:
+        "After the launch, our support continues to help your website evolve with your business. We provide ongoing assistance for content updates and security maintenance.Why Our Clients Choose Us User-Centric Design",
       icon: <MdSupportAgent size={28} color="black" />,
     },
   ];

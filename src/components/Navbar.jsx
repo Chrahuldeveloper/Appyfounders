@@ -14,7 +14,7 @@ export default function Navbar({ page }) {
               ) : null}
             </div>
           </Link>
-          <Link to={"/contact"}>
+          <Link to={"/contact/null"}>
             <div className="flex flex-col items-center justify-center">
               <li className="font-semibold cursor-pointer">Contact</li>
               {page === "contact" ? (

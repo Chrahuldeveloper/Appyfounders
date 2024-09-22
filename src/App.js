@@ -9,7 +9,7 @@ export default function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact/:sub" element={<Contact />} />
       </Routes>
     </Layout>
   );
