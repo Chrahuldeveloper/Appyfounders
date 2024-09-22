@@ -25,9 +25,9 @@ function Plans() {
                 } space-y-4 max-w-md rounded-xl shadow-lg  p-8`}
               >
                 <h1 className="text-xl font-bold md:text-2xl ubuntu-bold ">
-                  {item.tittle}
+                  {item.title}
                 </h1>
-                <p className="h-24 md:text-lg poppins-medium">{item.Para}</p>
+                <p className="h-24 md:text-lg poppins-medium">{item.tagline}</p>
                 <Link to="/contact">
                   <button
                     className={` w-full py-3 rounded-full font-semibold ${
@@ -36,19 +36,19 @@ function Plans() {
                         : "bg-[#aaeec4]  text-black"
                     }`}
                   >
-                    Get Started
+                    {item.callToAction}
                   </button>
                 </Link>
                 <hr
                   className={`${i === 0 && "hidden"}  bg-black h-0.5 w-full`}
                 />
-                {item.features.length > 0 ? (
+                {item.keyFeatures.length > 0 ? (
                   <h1 className="text-lg ubuntu-bold md:text-2xl">
                     Features :{" "}
                   </h1>
                 ) : null}
                 <ul className="space-y-3 poppins-medium">
-                  {item.features.map((_, index) => {
+                  {item.keyFeatures.map((_, index) => {
                     return (
                       <React.Fragment key={index}>
                         <li className="flex items-center gap-3">
