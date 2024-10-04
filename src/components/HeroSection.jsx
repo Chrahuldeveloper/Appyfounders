@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "./Button";
 
-export default function HeroSection({ tittle, message, btn , scrollToRef}) {
+export default function HeroSection({ tittle, message, btn, scrollToRef }) {
   const sentence = {
     hidden: { opacity: 1 },
     visible: {
@@ -25,7 +25,7 @@ export default function HeroSection({ tittle, message, btn , scrollToRef}) {
     <div className="flex items-center justify-center h-screen overflow-hidden -mt-36">
       <div className="relative z-10 space-y-8 text-center text-white">
         <motion.h3
-          className="load-screen--message"
+          className=" load-screen--message"
           variants={sentence}
           initial="hidden"
           animate="visible"
@@ -40,9 +40,12 @@ export default function HeroSection({ tittle, message, btn , scrollToRef}) {
             </motion.span>
           ))}
           <br />
+          <br />
+
+          
           {msg.split("").map((word, index) => (
             <motion.span
-              className="max-w-md mx-auto mb-10 text-lg text-gray-300 md:text-xl lg:text-2xl ubuntu-bold"
+              className="max-w-md mx-auto text-lg text-gray-300 md:text-xl lg:text-2xl ubuntu-bold"
               key={word + "-" + index}
               variants={letter}
             >
@@ -50,7 +53,7 @@ export default function HeroSection({ tittle, message, btn , scrollToRef}) {
             </motion.span>
           ))}
         </motion.h3>
-        <Button btn={btn} scrollToRef={scrollToRef}/>
+        <Button btn={btn} scrollToRef={scrollToRef} />
       </div>
     </div>
   );

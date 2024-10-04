@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className="bg-[#222222] w-screen overflow-x-clip px-2 pt-28">
       <HeroSection
-        tittle={"SaaS Studio"}
-        message={"WE BUILD FOR THE FUTURE."}
+        tittle={"AppyFounders"}
+        message={"Transform your Ideas into Apps.".toUpperCase()}
       />
       <Projects />
       <HowWeWork />

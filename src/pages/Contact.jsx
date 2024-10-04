@@ -95,7 +95,7 @@ export default function Contact() {
               <Link to="/">
                 <input
                   type="text"
-                  placeholder="fuck"
+                  placeholder="package"
                   className="text-white w-full py-3.5 px-2 rounded-lg outline-none bg-zinc-800"
                 />
               </Link>

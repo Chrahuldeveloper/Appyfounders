@@ -17,7 +17,7 @@ export default function Button({ btn, scrollToRef }) {
           />
         </button>
       ) : (
-        <Link to={"/contact"}>
+        <Link to={"/contact/null"}>
           <button
             className={`group flex items-center justify-center space-x-3 bg-[#aaeec4] text-gray-800 w-64 mx-auto py-3.5 mt-5 rounded-full transition-all duration-300 hover:bg-white hover:text-gray-900`}
           >
