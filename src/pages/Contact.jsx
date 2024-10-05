@@ -96,14 +96,14 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="package"
-                  className="text-white w-full py-3.5 px-2 rounded-lg outline-none bg-zinc-800"
+                  className="text-white w-full py-3.5 px-2 mt-3 rounded-lg outline-none bg-zinc-800"
                 />
               </Link>
             ) : (
               <input
                 type="text"
                 value={sub === "null" ? "" : data.Plan}
-                className="text-white w-full py-3.5 px-2 rounded-lg outline-none bg-zinc-800"
+                className="text-white w-full py-3.5 px-2 mt-3 rounded-lg outline-none bg-zinc-800"
               />
             )}
           </div>
