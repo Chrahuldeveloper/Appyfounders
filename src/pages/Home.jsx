@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroSection, HowWeWork, Navbar } from "../components/index";
-import Projects from "../components/Projects";
+// import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Why from "../components/Why";
 import Plans from "../components/Plans";
@@ -13,7 +13,7 @@ export default function Home() {
         tittle={"AppyFounders"}
         message={"Transform your Ideas into Apps.".toUpperCase()}
       />
-      <Projects />
+      {/* <Projects /> */}
       <HowWeWork />
       <Why />
       <Testimonials />

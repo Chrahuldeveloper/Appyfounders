@@ -17,7 +17,7 @@ export default function Testimonials() {
     {
       Name: "GANESH ANKATH",
       image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQFubZeoaaLYVg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718223027417?e=1733356800&v=beta&t=ZLxc4xRbcyhjDmDjMAim5uaBporH71AE0xr4mJxmi_8",
+        "https://media.licdn.com/dms/image/v2/D4D03AQGH0OM-JSNiJw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728560378048?e=1734566400&v=beta&t=-EukvFQ5AX3ufi22078Pqi56TsfSSwBSEo6igjngO_U",
       Para: "You've done really amazing work! It's very amazing how much imagination and quality you put into every project. Continue your fantastic effort!",
     },
   ];
