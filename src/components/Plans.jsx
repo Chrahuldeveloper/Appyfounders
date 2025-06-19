@@ -13,7 +13,7 @@ function Plans() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-5 px-6 mx-auto py-14 lg:grid lg:grid-cols-3">
+      <div className="flex justify-center items-center flex-col w-full gap-5 px-6 mx-auto py-14 lg:grid lg:grid-cols-3 place-items-center">
         {Package.map((item, i) => {
           return (
             <React.Fragment key={i}>

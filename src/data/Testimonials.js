@@ -5,19 +5,25 @@ export default function Testimonials() {
     {
       Name: "MENTORHEAL",
       image:
-        "https://media.licdn.com/dms/image/D560BAQFhjiJSAL_-UA/company-logo_200_200/0/1702317855706?e=1730332800&v=beta&t=-iQqH3IRjeM08YYTWTfW_cCtftVhRcVKo_av0xveAKg",
+        "https://media.licdn.com/dms/image/v2/D560BAQFhjiJSAL_-UA/company-logo_100_100/company-logo_100_100/0/1702317855706?e=1755734400&v=beta&t=yGBLMX4CeH_tQ_o0hh2nHzJmT__Idm4zJSK_Vzi9_NY",
       Para: "we are thoroughly impressed with their development services. The level of professionalism and attention to detail they demonstrated throughout the project was outstanding. Team communicated effectively, met deadlines, and provided valuable insights that significantly enhanced the final outcome",
+    },
+        {
+      Name: "VARUN SANDESH",
+      image:
+        "https://media.licdn.com/dms/image/v2/D5603AQG4IJ92RrkYcg/profile-displayphoto-shrink_100_100/B56ZQ2RI2EH0AU-/0/1736077252493?e=1755734400&v=beta&t=-bAmE_xVDwCPnScF_wc99u8hdU8wM9jG4e4Ii_4wKw0",
+      Para: "The team demonstrated a strong command over programming and showed deep expertise in web development. Their technical skills and attention to detail stood out throughout the project.",
     },
     {
       Name: "TANJUJA",
       image:
-        "https://media.licdn.com/dms/image/v2/D5603AQEUmGZEg9Od5g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718220559971?e=1733356800&v=beta&t=Im8Vr9R-c2aoxv3S2vsdlAaJveiwqEGptfyS-6LdZUw",
+        "https://media.licdn.com/dms/image/v2/D5603AQEUmGZEg9Od5g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1718222541684?e=1755734400&v=beta&t=8aeqTU619cBf6jLYf2VJpiskD0yp_mrovP9wCPWAe8Y",
       Para: " As a client, I was thoroughly impressed with the website he created for my project.The Team demonstrated exceptional technical skills, creativity, and attention to detail. He communicated clearly and was very responsive throughout the process, making sure all our requirements were met. The final product exceeded our expectations, both in functionality and design",
     },
     {
       Name: "GANESH ANKATH",
       image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQGH0OM-JSNiJw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728560378048?e=1734566400&v=beta&t=-EukvFQ5AX3ufi22078Pqi56TsfSSwBSEo6igjngO_U",
+        "https://media.licdn.com/dms/image/v2/D4D03AQFO3ci1vJmo6g/profile-displayphoto-shrink_200_200/B4DZaFm3F4G0AY-/0/1745998281158?e=1755734400&v=beta&t=U_cApq2yPGBIfKTFokjv9X-Grnhyou9VQhogaQbTXk8",
       Para: "You've done really amazing work! It's very amazing how much imagination and quality you put into every project. Continue your fantastic effort!",
     },
   ];
